@@ -1,6 +1,6 @@
 {
     "name": "calc-box",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "",
     "main": "main.js",
     "scripts": {
@@ -10,5 +10,8 @@
     "license": "ISC",
     "devDependencies": {
         "jest": "^29.7.0"
+    },
+    "dependencies": {
+        "calc-box": "^0.0.2"
     }
 }

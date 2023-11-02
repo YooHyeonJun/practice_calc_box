@@ -6,15 +6,20 @@ function avg(numbers) {
     return s / numbers.length;
 }
 function prime(num) {
-    let sqrt_num = Math.sqrt(num);
     let is_prime = true;
-    if (num == 1) is_prime = false;
-    for (let i = 2; i <= sqrt_num; i++) {
-        if (num % i == 0) {
-            is_prime = false;
-            break;
+    if (num <= 1) {
+        is_prime = false;
+    }
+    else {
+        let sqrt_num = Math.sqrt(num);
+        for (let i = 2; i <= sqrt_num; i++) {
+            if (num % i == 0) {
+                is_prime = false;
+                break;
+            }
         }
     }
+
     return is_prime;
 }
 function fact(num) {
